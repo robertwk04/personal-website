@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Robert-Dev</title>
+  </head>
+  <body>
+    <section id="navbar">
+     <nav>
+      <label class="nav-btn logo">
+        <img src="./logo.png" class="logo-img"/></label>
+      <button class="nav-btn" onclick="scrollToSection('about')">
+        Despre
+      </button>
+      <button class="nav-btn" onclick="scrollToSection('Contact')">
+        Contact
+      </button>
+      <button class="nav-btn" onclick="scrollToSection('skills')">
+        Skiluri
+      </button>
+      <button class="nav-btn" onclick="scrollToSection('start')">
+        Portofoliu
+      </button>
+      <button class="nav-btn" onclick="scrollToSection('start')">
+        CV
+      </button>
+     </nav>
+    </section>
+    <section id="start">
+      <div class="start">
+
+          <div class="prezentation-container">
+            <h3>Hello!</h3>
+            <h1>I’m Robert</h1>
+            <h2>Your Next Web Developer!</h2>
+          </div>
+
+          <div class="img-container">
+            <img src="./ProfilePicture.png" alt="Portret" id="profile" class="circle" />
+          </div>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-grid">
+        <div class="about left content-1">
+          <h2 id="text1">Despre Mine?</h2>
+        </div>
+        <div class="about content-2">
+          <p id="text2">
+            Acum 5 ani am descoperit ce se poate face cu un computer,pe langa
+            jucatul jocurilor ,desigur.Am inceput sa fiu atras de programare.Am
+            invatat sa creez roboti sau mecanisme programate cu ajutorul placii
+            Arduino.Am invatat sa imi creez singur unele jocuri pe calculator si
+            chiar de mobil.
+          </p>
+        </div>
+        <div class="about  left content-3">
+          <p id="text3">
+            De mic am avut pasiunea de a crea si de a inventa tot felul de
+            lucruri,obiecte confectionate din carton lemn ,simple circuite
+            electrice si mecanism
+          </p>
+        </div>
+        <div class="about content-4">
+          <p id="text4">
+            Mi-am dezvoltat cunostintele generale de programare lucrand cu
+            limbaje ca C++ .insa am dorit sa invat si arta crearii site-urilor
+            web.Iata-ma aici!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="logos">
+        <div class="logo-slide">
+          <img src="./logos/bootstrap.png" alt="logo">
+          <img src="./logos/css.png" alt="logo">
+          <img src="./logos/database.png" alt="logo">
+          <img src="./logos/git.png" alt="logo">
+          <img src="./logos/html.png" alt="logo">
+          <img src="./logos/javascript.png" alt="logo">
+          <img src="./logos/node.png" alt="logo">
+        </div>
+        <div class="logo-slide">
+          <img src="./logos/bootstrap.png" alt="logo">
+          <img src="./logos/css.png" alt="logo">
+          <img src="./logos/database.png" alt="logo">
+          <img src="./logos/git.png" alt="logo">
+          <img src="./logos/html.png" alt="logo">
+          <img src="./logos/javascript.png" alt="logo">
+          <img src="./logos/node.png" alt="logo">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact"></section>
+
+
+    <script>
+      function scrollToSection(section) {
+        var section = document.getElementById(section);
+          if(section) {
+              section.scrollIntoView({ behavior: 'smooth' });
+          }
+      }
+      </script>
+      
+  </body>
+</html>

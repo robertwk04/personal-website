@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(39, 39, 39);
+    color:whitesmoke;
+}
+:root{
+    font-size: 20px;
+}
+
+nav{
+    display:flex;
+    justify-content: end;
+    height: 50px;
+    padding: 7px;
+}
+.nav-btn.logo{
+    order: -1;
+    margin-right: auto;
+}
+.nav-btn.logo:hover{
+    border: none;
+}
+.logo-img{
+    width: 140%;
+    margin: 5px;
+}
+.nav-btn{
+    border: none;
+    background-color:transparent;
+    width: 100px;
+    color:whitesmoke
+}
+.nav-btn:hover{
+    border-bottom: 1px solid rgb(248, 248, 248);
+}
+
+h2,h3,h4,h5,p,button{
+    font-family:  "Rubik", sans-serif;
+}
+h1{
+font-size: 3rem;
+font-family: "Roboto Slab",serif;
+}
+h2{
+font-size: 1.5rem;  
+font-weight: 200;
+}
+h3{
+    font-size: 2rem;
+}
+.start{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background: radial-gradient(ellipse at top, #303577, transparent),
+            radial-gradient(ellipse at bottom, #141414, transparent);
+}
+.circle{
+ border-radius: 50%;
+ width: 60%;
+}
+.img-container{
+    text-align: center;
+}
+.presentation-container{
+    text-align: start;
+}
+
+.about-grid{
+    margin: 30px 0px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.about{
+    padding: 30px;
+    font-size: 1rem;
+}
+.about.content-1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.about.left{
+    border-right: 1px solid rgb(27, 70, 163);
+}
+
+
+@keyframes slide {
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+.logos{
+    padding: 40px;
+    overflow: hidden;
+    background-color: rgb(85, 85, 85);
+    box-shadow: 50px;
+    white-space: nowrap;
+    position: relative;
+}
+.logos::before,.logos::after{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    content: "";
+}
+.logos::before{
+    background: linear-gradient(to left,transparent,rgb(39, 39, 39));
+    left:0;
+}
+.logos::after{
+    background: linear-gradient(to right,transparent,rgb(39, 39, 39));
+    right:0;
+}
+
+.logo-slide{
+    display: inline-block;
+    animation:15s  slide  infinite linear;
+}
+.logos:hover .logo-slide{
+    animation-play-state: paused;
+}
+.logo-slide>img{
+  height: 90px;
+  margin: 0px 40px;
+}
